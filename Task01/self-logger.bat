@@ -1,13 +1,13 @@
 @echo off
 where sqlite3>nul 2>nul
-if %ERRORLEVEL% NEQ 0 ( echo Š®¬ ­¤  sqlite3 ­¥ ­ ©¤¥­  & pause & exit ) 
+if %ERRORLEVEL% NEQ 0 ( echo ÐšÐ¾Ð¼Ð°Ð½Ð´Ð° sqlite3 Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð° & pause & exit ) 
 echo create table if not exists logger(User varchar(10), Date text default current_timestamp); | sqlite3 logger.db
 echo insert into logger values('%USERNAME%', datetime('now', 'localtime')); | sqlite3 logger.db
 
-echo ˆ¬ï ¯à®£à ¬¬ë: %~nx0
-echo|<nul set /p="Š®«¨ç¥áâ¢® § ¯ãáª®¢: "
+echo Ð˜Ð¼Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹: %~nx0
+echo|<nul set /p="ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°Ð¿ÑƒÑÐºÐ¾Ð²: "
 echo select count(*) from logger; | sqlite3 logger.db
-echo|<nul set /p="¥à¢ë© § ¯ãáª: "
+echo|<nul set /p="ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð·Ð°Ð¿ÑƒÑÐº: "
 echo select Date from logger order by Date asc limit 1; | sqlite3 logger.db
 
 echo.

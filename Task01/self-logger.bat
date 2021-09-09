@@ -1,4 +1,5 @@
 @echo off
+chcp 65001>nul
 where sqlite3>nul 2>nul
 if %ERRORLEVEL% NEQ 0 ( echo Команда sqlite3 не найдена & pause & exit ) 
 echo create table if not exists logger(User varchar(10), Date text default current_timestamp); | sqlite3 logger.db

@@ -10,10 +10,8 @@
       <hgroup>
       <h1>Cold-Hot</h1> 
       </hgroup>
-        <form action="" method="post">
-        <input type="text" id="guess" placeholder="Введите число">
-        <button id="button" onclick="startGame()">Угадать</button>
-        </form>
+      <input type="text" id="guess" placeholder="Введите число" onkeydown = "if (event.keyCode == 13) document.getElementById('button').click()">
+      <input type="button" id="button" onclick="startGame()" value="Угадать">
     </div>
   </body>
   <script src="View.js" type="module">

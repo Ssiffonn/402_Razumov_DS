@@ -22,13 +22,12 @@ input[type=submit], input[type=button] {
   border-radius: 8px;
 }
 
-input[type=submit]:hover, input[type=button]:hover {
+input[type=submit], input[type=button]:hover {
   background-color: #9F37EE;
   cursor: pointer;
 }
 
-.container
-{
+.container {
   background: linear-gradient(to left, rgba(171,0,255,1) 20%, rgba(108,118,255,1) 43%, rgba(2,248,254,1) 71%, rgba(129,218,172,1) 100%);
   width: 30%;
   margin: auto;

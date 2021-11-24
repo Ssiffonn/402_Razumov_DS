@@ -1,0 +1,57 @@
+body {
+  font-family: 'Raleway', arial, sans-serif;
+  font-style: 800;
+  background: linear-gradient(to right, rgba(171,0,255,1) 20%, rgba(108,118,255,1) 43%, rgba(2,248,254,1) 71%, rgba(129,218,172,1) 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+input {
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+}
+
+input[type=submit], input[type=button] {
+  width: 150px;
+  background-color: #4E1B75;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+}
+
+input[type=submit], input[type=button]:hover {
+  background-color: #9F37EE;
+  cursor: pointer;
+}
+
+.container {
+  background: linear-gradient(to left, rgba(171,0,255,1) 20%, rgba(108,118,255,1) 43%, rgba(2,248,254,1) 71%, rgba(129,218,172,1) 100%);
+  width: 30%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px; 
+}
+
+input[type="button"]:disabled {
+  background-color: #bdc3c7;
+}
+
+.hidden {
+	display: none;
+}
+
+table {
+	border: 1px solid white;
+	border-spacing: 0px;
+  background: linear-gradient(to top, rgba(171,0,255,1) 20%, rgba(108,118,255,1) 43%, rgba(2,248,254,1) 71%, rgba(129,218,172,1) 100%);;
+}
+
+
+td, th {
+	margin: 3px;
+	padding: 3px;
+	border: 1px solid white;
+}

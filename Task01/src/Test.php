@@ -7,10 +7,10 @@ use App\Vector;
 function runTest()
 {
     $v1 = new Vector(13, 7, 5);
-    echo "v1 = " . $v1 . "\n"; // (2, 6, 1)
+    echo "v1 = " . $v1 . "\n"; // (13, 7, 5)
 
     $v2 = new Vector(1, 17, -9);
-    echo "v2 = " . $v2 . "\n"; // (1, 5, -4)
+    echo "v2 = " . $v2 . "\n"; // (1, 17, -9)
 
     $vectorAddition = $v1->add($v2);
     $vectorDifference = $v1->sub($v2);
